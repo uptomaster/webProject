@@ -1,0 +1,152 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #f4f7fe;
+  color: #222;
+  padding-bottom: 60px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8fafc; /* 페이지 메인 색 */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1e293b; /* 어두운 네이비 계열로 강조 */
+}
+
+.header-icons .icon-btn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.header-icons .icon-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Main content */
+.main {
+  padding: 20px;
+}
+
+.lost-items, .ranking, .actions {
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  background-color: #eaf1ff;
+  transform: translateY(-2px);
+}
+
+.action-btn {
+  background-color: #0051ff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.action-btn:hover {
+  background-color: #377bff;
+}
+
+/* Ranking */
+.rank-list {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.rank-list li {
+  margin-bottom: 6px;
+}
+
+/* CTA Buttons */
+.actions .cta-btn {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 14px;
+  font-size: 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.actions .cta-btn:hover {
+  background-color: #555;
+}
+
+/* Bottom nav */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #ddd;
+}
+
+.bottom-nav button {
+  flex: 1;
+  padding: 12px;
+  font-size: 0.9rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.bottom-nav button:hover {
+  background-color: #e1e9ff;
+  color: #0051ff;
+}
